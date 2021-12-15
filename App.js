@@ -13,7 +13,12 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-      <Stack.Screen  options={{ title: 'Ставки' }} name = "Main" component = {main_page}/>
+      <Stack.Screen 
+       options={{
+          title: 'Ставки' ,
+          cardStyle : {backgroundColor : 'transparent', color : 'black'}
+        }} name = "Main" component = {main_page}
+       />
       <Stack.Screen   options={{ title: 'Ставка' }} name = "Info" component = {info_page}/>
       </Stack.Navigator>
     </NavigationContainer>
